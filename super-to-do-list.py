@@ -15,7 +15,7 @@ root.configure(bg="white")
 root.title("My Super To Do List")
 
 # Change the window size
-root.geometry("250x275")
+root.geometry("350x300")
 
 # Create an empty list
 tasks = []
@@ -104,22 +104,22 @@ lbl_display.grid(row=0,column=1)
 txt_input = tkinter.Entry(root, width=15)
 txt_input.grid(row=1,column=1)
 
-btn_add_task = tkinter.Button(root, text="Add task", fg="green", bg="white", command=add_task)
+btn_add_task = tkinter.Button(root, text="Add task", fg="black", bg="white", command=add_task)
 btn_add_task.grid(row=1,column=0)
 
 btn_delete_all = tkinter.Button(root, text="Delete All", fg="black", bg="white", command=delete_all)
 btn_delete_all.grid(row=2,column=0)
 
-btn_del_one = tkinter.Button(root, text="Delete", fg="purple", bg="white", command=del_one)
+btn_del_one = tkinter.Button(root, text="Delete", fg="black", bg="white", command=del_one)
 btn_del_one.grid(row=3,column=0)
 
-btn_sort_asc = tkinter.Button(root, text="Sort (ASC)", fg="blue", bg="white", command=sort_asc)
+btn_sort_asc = tkinter.Button(root, text="Sort (ASC)", fg="black", bg="white", command=sort_asc)
 btn_sort_asc.grid(row=4,column=0)
 
-btn_sort_desc = tkinter.Button(root, text="Sort (DESC)", fg="blue", bg="white", command=sort_desc)
+btn_sort_desc = tkinter.Button(root, text="Sort (DESC)", fg="black", bg="white", command=sort_desc)
 btn_sort_desc.grid(row=5,column=0)
 
-btn_choose_random = tkinter.Button(root, text="Choose Random", fg="purple", bg="white", command=choose_random)
+btn_choose_random = tkinter.Button(root, text="Choose Random", fg="black", bg="white", command=choose_random)
 btn_choose_random.grid(row=6,column=0)
 
 btn_number_of_tasks = tkinter.Button(root, text="Number of Tasks", fg="black", bg="white", command=show_number_of_tasks)
